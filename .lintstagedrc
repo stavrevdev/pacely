@@ -2,5 +2,9 @@
   "{apps,libs,tools}/**/*.{js,ts,jsx,tsx,json}": [
     "nx affected:lint",
     "nx format:write"
+  ],
+  "{apps,libs,tools}/**/*.css": [
+    "stylelint '**/*.css'",
+    "nx format:write"
   ]
 }
