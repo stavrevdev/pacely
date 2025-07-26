@@ -4,7 +4,7 @@ module.exports = {
     `nx format:write --files=${files.join(',')}`
   ],
   "{apps,libs,tools}/**/*.css": files => [
-    "stylelint '**/*.css'",
+    `stylelint ${files.join(',')}`,
     `nx format:write --files=${files.join(',')}`
   ]
 }
