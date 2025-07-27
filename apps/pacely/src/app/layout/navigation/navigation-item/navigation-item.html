@@ -1,0 +1,10 @@
+<p-button
+  routerLinkActive
+  #rla="routerLinkActive"
+  [routerLink]="link()"
+  [icon]="`pi pi-${icon()}`"
+  [text]="!rla.isActive"
+  [routerLinkActiveOptions]="{ exact: exactActive() }"
+  [pTooltip]="page()"
+  tooltipPosition="right"
+/>

@@ -1,0 +1,37 @@
+<div class="flex flex-col items-center bg-slate-200 h-full rounded-lg p-2.5 gap-16">
+  <app-logo />
+
+  <nav class="flex flex-col gap-4">
+    <app-navigation-item
+      [link]="['/']"
+      [exactActive]="true"
+      page="Dashboard"
+      icon="home"
+    />
+    <app-navigation-item
+      [link]="['/tasks']"
+      page="Tasks"
+      icon="check"
+    />
+    <app-navigation-item
+      [link]="['/calendar']"
+      page="Calendar"
+      icon="calendar"
+    />
+    <app-navigation-item
+      [link]="['/time-tracker']"
+      page="Time Tracker"
+      icon="clock"
+    />
+    <app-navigation-item
+      [link]="['/matrix']"
+      page="Eisenhower Matrix"
+      icon="table"
+    />
+    <app-navigation-item
+      [link]="['/habits']"
+      page="Habits"
+      icon="heart"
+    />
+  </nav>
+</div>

@@ -8,9 +8,8 @@ import { provideRouter } from '@angular/router';
 
 import { providePrimeNG } from 'primeng/config';
 
-import Aura from '@primeuix/themes/aura';
-
 import { appRoutes } from './app.routes';
+import { SlateAura } from './themes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -20,7 +19,7 @@ export const appConfig: ApplicationConfig = {
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
-        preset: Aura,
+        preset: SlateAura,
         options: {
           darkModeSelector: '.dark-mode',
         },
