@@ -1,0 +1,6 @@
+<p-selectbutton [options]="views" [(ngModel)]="value">
+  <ng-template #item let-item>
+    <i [class]="item.icon"></i>
+    {{item.label}}
+  </ng-template>
+</p-selectbutton>

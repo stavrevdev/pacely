@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { TasksSidebar } from './tasks-sidebar/tasks-sidebar';
+import { TasksSidebar } from './sidebar/sidebar';
 
 @Component({
   selector: 'app-tasks',

@@ -1,6 +1,11 @@
-<div class="flex flex-col justify-between w-64 h-full border border-slate-200 rounded-lg p-2">
+<div class="flex flex-col justify-between w-64 h-full bg-slate-100 rounded-lg p-2">
   <div class="flex flex-col gap-4">
     <div class="flex flex-col">
+      <a [class]="itemClasses">
+        <span class="pi pi-list text-slate-400 w-6"></span>
+        All tasks
+      </a>
+
       <span [class]="titleClasses">Schedule</span>
 
       <a [class]="itemClasses">
